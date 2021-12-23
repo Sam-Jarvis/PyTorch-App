@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Bird Detector</string>
+    <string name="btn_select_image">Select Image</string>
+    <string name="img_content_description">Image view for the user selectable image.</string>
+    <string name="predicted_class">Predicted Class</string>
+    <string name="certainty">Certainty</string>
+</resources>

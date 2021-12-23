@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/btnSelectImage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="50dp"
+        android:text="@string/btn_select_image"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageView
+        android:id="@+id/ivMain"
+        android:layout_width="224dp"
+        android:layout_height="224dp"
+        android:layout_marginBottom="170dp"
+        android:contentDescription="@string/img_content_description"
+        app:layout_constraintBottom_toTopOf="@+id/btnSelectImage"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/img_234957" />
+
+    <TextView
+        android:id="@+id/tvPredClassH"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:text="@string/predicted_class"
+        app:layout_constraintBottom_toTopOf="@+id/tvPredClass"
+        app:layout_constraintStart_toStartOf="@+id/ivMain" />
+
+    <TextView
+        android:id="@+id/tvCertaintyH"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:text="@string/certainty"
+        app:layout_constraintBottom_toTopOf="@+id/tvCertainty"
+        app:layout_constraintEnd_toEndOf="@+id/ivMain" />
+
+    <TextView
+        android:id="@+id/tvPredClass"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="60dp"
+        app:layout_constraintBottom_toTopOf="@+id/ivMain"
+        app:layout_constraintEnd_toEndOf="@+id/tvPredClassH"
+        app:layout_constraintStart_toStartOf="@+id/tvPredClassH" />
+
+    <TextView
+        android:id="@+id/tvCertainty"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="60dp"
+        app:layout_constraintBottom_toTopOf="@+id/ivMain"
+        app:layout_constraintEnd_toEndOf="@+id/tvCertaintyH"
+        app:layout_constraintStart_toStartOf="@+id/tvCertaintyH" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
